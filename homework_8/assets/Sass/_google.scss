@@ -1,0 +1,274 @@
+.google_cont {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 300px;
+
+    .google_left {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h2 {
+            color: #021112;
+            font-weight: 700;
+            font-size: 58px; 
+            max-width: 650px;   
+        }
+
+        p {
+            color: #677071;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 38px;
+            max-width: 560px;  
+            text-align: justify;
+        }
+
+        .sales {
+            display: flex;
+            gap: 30px;
+
+            h5 {
+                color: #021112;
+                font-weight: 700;
+                font-size: 42px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                color: #677071;
+            }
+
+            .sale:nth-of-type(2) {
+                padding: 0 30px;
+                border-left: 1px solid #E0E2E3;
+                border-right: 1px solid #E0E2E3;
+            }
+        }
+    }
+
+    .google_right {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        max-width: 580px;
+        background: #FFFFFF;
+        box-shadow: 8px 27px 69px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        position: relative; 
+
+        .three_dots {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: end;
+            margin-bottom: 30px;
+
+            .three_dot {
+                width: 6px;
+                height: 6px;
+                background: #CCCFD0;
+                border-radius: 50%;
+            }
+        }
+
+        .google_right_img {
+            max-width: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+
+            .gogle_itslef {
+                max-width: 170px;
+                padding: 35px;
+                background: #FFFFFF;
+                box-shadow: 6px 22px 40px rgba(0, 0, 0, 0.05);
+                border-radius: 20px;
+                position: absolute;
+                top: 80px;
+                right: -10%;
+
+                img {
+                    max-width: 90px;
+                }
+            }
+
+            .marker {
+                position: absolute;
+                padding: 13px 17px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+                border-radius: 5px;
+                bottom: 250px;
+                right: 100px;
+            }
+        }
+
+        .talents {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding: 30px 0;
+
+            h3 {
+                color: #021112;
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            .talent_images {
+                display: flex;
+                img:nth-of-type(2) {
+                    position: relative;
+                    left: -25px;
+                }
+                img:nth-of-type(3) {
+                    position: relative;
+                    left: -50px;
+                }
+                img:nth-of-type(4) {
+                    position: relative;
+                    left: -75px;
+                }
+            }
+        }
+
+        p {
+            color: #677071;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 181.7%;
+        }
+
+        .info_telent_icons {
+            display: flex;
+            justify-content: space-between;
+            color: #677071;
+            margin-top: 35px;
+        }
+
+        .san_diego {
+            position: absolute;
+            bottom: -20%;
+            left: -15%;
+            background: #FFFFFF;
+            box-shadow: 16px -16px 42px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            padding: 35px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+
+            .san_img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #cfcd60;
+                margin-bottom: 5px;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                color: #021112;
+            }
+
+            h5 {
+                color: #CCCFD0;
+                font-weight: 400;
+                font-size: 10px;
+            }
+
+            .follow {
+                display: flex;
+                justify-content: space-between;
+                gap: 70px;
+                h4 {
+                    color: #677071;
+                }
+            }
+
+            .btns {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+
+                button {
+                    padding: 14px 25px;
+                    border: 1px solid #E0E2E3;
+                    border-radius: 10px;
+                    color: #677071;
+                    font-weight: 400;
+                    font-size: 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #772D8B;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1350px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    @media (max-width: 780px) {
+        .google_left {
+            h2 {
+                font-size: larger;
+            }
+            p {
+                font-size: medium;
+                line-height: normal;
+            }
+
+            .sales {
+                .sale {
+                    h5 {
+                        font-size: medium;
+                    }
+
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .google_right {
+            padding: 20px 10px;
+
+            .google_right_img {
+                .gogle_itslef {
+                    max-width: 100px;
+                    padding: 15px;
+                    right: 0;
+                }
+
+                .marker {
+                    max-width: 20px;
+                    padding: 5px;
+                    border-radius: 3px;
+                    bottom: 300px;
+                }
+            }
+
+            .san_diego {
+                padding: 15px;
+                position: sticky;
+                margin-top: 15px;
+            }
+        }
+    }
+}
